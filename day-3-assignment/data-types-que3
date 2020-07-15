@@ -1,0 +1,175 @@
+available data types in Javascript
+
+
+Ans: Data types basically specify what kind of data can be stored and manipulated
+     within a program
+
+    There are six basic data types in Javascript which can be divided into three main 
+    categories:
+1) primitive(primary)
+    ==>     1.1) string
+            1.2) Number
+            1.3) Boolean 
+            These are primitive data types
+    ==>     It can hold only one type at a time
+
+2) composite (reference)
+    ==>     2.1) Object
+            2.2) Array
+            2.3) Function 
+            Which are all type of objects
+    ==>     It can hold collection of value and more complex entities
+
+3) special data types
+    ==>     3.1 ) undefined 
+            3.2) Null 
+            Both are special data types
+
+==========================================================================
+1.1) String Data type
+    ==>     string data types can be used textual data
+    ==>     it can created using single or double quotes
+  
+    for Ex:
+    =======
+            |==================================
+            |   var a = 'Hi i am Javascript'    //using single quotes
+            |   var b = "Hi i am Javascript"    //using double quotes
+            |==================================
+
+    ==>     There are multiple way to use quotes in string for ex:
+
+        var a = 'Hey "hello" LetsUpgrade' //double quotes inside single quotes
+        var b = "let's go together"       //single quotes inside double quotes
+        var c = 'we\'ll become zero to hero //escaping single quote with backslash
+
+1.2) Number Data type
+    ==>     Number data types can be used to represent positive or negative number 
+            with or without decimal place or number.
+    ==>     number data type also includes some special values which are: 
+            1) Infinity
+            2) -Infinity
+            3) NaN
+    
+    for Ex:
+    ======= for positive or negative number
+            |=======================================================
+            | var a = 20;         // represent as integer
+            | var b = .9;         // represent as floating-point
+            | var c= .2e+6        // exponential notation, same as 4.25e6 or 4250000
+            | var d = 4.25e-6;    // exponential notation, same as 0.00000425
+            |=======================================================
+
+    special values Ex: for Infinity or -infinity
+            |========================================
+            |   alert(16 / 0);  // Output: Infinity
+            |   alert(-16 / 0); // Output: -Infinity
+            |   alert(16 / -0); // Output: -Infinity
+            |========================================
+      
+    NaN number
+    for Ex:
+    =======
+            |=====================================
+            |    alert("Javascript" / 2)     //Nan
+            |======================================
+
+1.3) boolean Data type
+    ==>     It can only Two values True or Flase
+
+    for Ex:
+    =======
+            |==================================
+            | var a=2, b=3, c=10;
+            | alert(a > b)      // Output: Flase
+            | alert(c > b)      // Output: True
+            |===================================
+
+
+
+=======================================================================
+
+2.1) Object Data Type
+    ==>     Object contains properties
+    ==>     It is used to stored collection of data
+    ==>     It defined as a key-value pair.
+    ==>     A property name is always string but value can be any data type
+    
+    for Ex:
+    =======  var details = {"name":"xyz", "age","10"};
+            here,
+            |================================
+            | name      ==> property name  
+            | xyx or 10 ==>  Value           
+            |===============================
+    Syntax:
+            |==================================
+            |   var Object  = {}
+            | var person = {"name":"xyz", "age","10"};
+            |==================================
+
+2.2) Array Data Type
+    ==>     It is used for sorting multiple value in single variable.
+    ==>     Each value (Also called an Element)
+    ==>     Array Index starts from 0
+    so first array element is arr[0] not arr[1]
+
+    Syntax:
+    =======
+     var array = ["0", "1", "2", "3", "4"];
+
+    for Ex:
+    =======
+            |==========================================
+            | var city = ["Mumbai", "Kerla"]; 
+            | var Color = ["red", "pink"];
+            | Output: 
+            | alert(Color[0])       // Output: red
+            | alert(city[1])        
+            |===========================================
+
+2.3) Function Data Type
+    ==>     function is callable object that executes a block of code.
+
+    for Ex:
+    =======
+            |==========================================
+            | var greeting  = function(){ 
+            |        return "Hello World!"; 
+            |    }
+            | // Check the type of greeting variable
+            |  alert(typeof greeting) // Output: function
+            |  alert(greeting());     // Output: Hello World!       
+            |===========================================
+
+=======================================================================
+
+3.1)   undefined Data Type
+    ==>     undefined data type can only have one value-the special value undefined.
+    ==>     if variable has been declared, but has not been assigned a value, has the value undefined
+
+    for Ex:
+    =======
+            |=========================================
+            |    var a;
+            |   var b = "Hello LetsUpgrade";
+            |
+            | alert(a);       // Output : undefined
+            | alert(b);       // Output : Hello LetsUpgrade   
+            |===========================================
+
+3.2)   null Data Type
+    ==>     A null values means There is no value.
+    ==>     It is not equivalent to an empty string("") or 0
+    ==>     There is no value defined
+
+
+    for Ex:
+    =======
+            |==================================
+            |   var a = null;
+            |   alert(a);       // Output : null
+            |   <br/>
+            |   var b = "Hellow"
+            |   alert(b)        // Output : Hellow
+            |==================================

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ text-align: center;}
+        h1{color: #f00; text-align: center;}
+        ol li{ font-size: 20px; font-weight: 700;}
+    </style>
+</head>
+<body>
+
+    <h1>DIFFERENCE BETWEEN <br/> var, let &  const </h1>
+    <hr>
+    <span>Please check console for all Outputs</span>
+    <br>
+    <br>
+    <br>
+
+    <!-- script here -->
+    <script>
+        /*  1) var  
+            ==>  a var variable can be redeclared and updated
+            ==> decalre by using var keyword
+            ==> Globaly we can assign this value
+        */
+        /*  =====================================
+                        Example
+            ===================================== */
+            // Decaler string type of var 
+            var name = "komal";
+            console.log(name);      // output : komal
+
+            // Decaler string type of Number
+            var age = 21;
+            console.log(age)        // output : 21
+
+            // Decaler string type of var
+            var lovejs = true;
+            console.log(lovejs)        // output : true
+
+            // array 
+            var language = ["marathi","hindi","gujrati"];
+            console.log(language);
+            // objects
+            var person = {name: "komal", age :"25"}
+            console.log(person);
+        
+            // undefine
+            var a = 10 ;
+            console.log(a);
+            // var z = nulll;
+            // console.log(z);
+
+        /* =====================let=====================================
+            ==> let statement declares a local variable in a block scope
+            ==> It is similar to var, in that we can optionally initialize the variable.
+            ==> only locally we can assign this value withing this {} brackets.
+            ==> The let statement allows you to create a variable with the scope
+                limited to the block on which it is used.
+            ==> It is similar to the variable we declare in other 
+                languages like Java, .NET, etc.
+            ==> The scope will be well maintained with a let statement and when
+                using an inner function the let statement makes your code clean and clear.
+           
+        */
+         /*  =====================================
+                        Example
+            ===================================== */
+                var komal = "a";
+                {
+                let name = "komal" ;
+                console.log(name);       
+                }
+
+         /* =====================const=====================================
+            ==> const statement values can be assigned once and they cannot be reassigned.
+                The scope of const statement works similar to let statements.
+            ==> Declare it by usign Const keyword
+            ==> we can't reassign the value
+        */
+        /*  =====================================
+                        Example
+            ===================================== */
+            const country = "India";
+            console.log(country);
+
+    </script>
+</body>
+</html>
